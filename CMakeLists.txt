@@ -9,23 +9,26 @@ add_message_files(DIRECTORY msg
                             ExternalPower.msg
                             Led.msg
                             PowerSystemEvent.msg
-                            SensorState.msg
+                            # Uses Header header
+                            #SensorState.msg
                             VersionInfo.msg
                             ControllerInfo.msg
                             ButtonEvent.msg
                             DigitalInputEvent.msg
-                            DockInfraRed.msg
+                            # Uses Header header
+                            #DockInfraRed.msg
                             KeyboardInput.msg
                             MotorPower.msg
                             RobotStateEvent.msg
                             Sound.msg
-                            ScanAngle.msg
+                            # Uses Header header
+                            #ScanAngle.msg
                             WheelDropEvent.msg
                  )
 
-add_action_files(DIRECTORY action
-                     FILES AutoDocking.action
-                )
+#add_action_files(DIRECTORY action
+#                     FILES AutoDocking.action
+#                )
 
 generate_messages(DEPENDENCIES std_msgs actionlib_msgs)
 
